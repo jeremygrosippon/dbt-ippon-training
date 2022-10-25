@@ -1,0 +1,6 @@
+identifier, restaurant_identifier, payment_method, total_price, timestamp
+1, 1, 'card', 100.0, 2022-01-19 03:14:07
+2, 1, 'card', 5.0, 2022-01-19 03:14:07
+3, 3, 'cash', 15.0, 2022-01-19 03:14:07
+4, 2, 'cheque', 25.5, 2022-01-19 03:14:07
+5, 5, 'meal_ticket', 19.0, 2022-01-19 03:14:07

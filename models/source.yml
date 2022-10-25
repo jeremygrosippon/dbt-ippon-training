@@ -32,8 +32,10 @@ sources:
             tests:
               - unique
               - not_null
-
-      - name: commandes
+  - name: source
+    description: This is a replica of the Snowflake database used by our app
+    tables:
+      - name: orders
         description: >
           Informations about the restaurant's orders
         columns:
@@ -50,17 +52,15 @@ sources:
                     to: ref('restaurants')
                     field: IDENTIFIER
           - name: PAYMENT_METHOD
-            description: Address of the restaurant
             tests:
               - not_null
               - accepted_values:
                     values: ['card', 'cash', 'cheque', 'meal_ticket']
-          - name: TOTAL_PRICE
-            description: Number of employees of the restaurant
+          - name: AMOUNT
             tests:
               - unique
               - not_null
-          - name: TIMESTAMP
+          - name: CREATED_AT
             tests:
               - unique
               - not_null

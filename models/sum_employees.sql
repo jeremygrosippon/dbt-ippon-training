@@ -1,1 +1,1 @@
-SELECT count(*) FROM "DB_JGROS_DEV"."PUBLIC"."RESTAURANTS";
+SELECT sum(NB_EMPLYEES) FROM {{ source('public', 'restaurants') }}

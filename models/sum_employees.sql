@@ -1,1 +1,0 @@
-SELECT sum(NB_EMPLYEES) FROM {{ source('public', 'restaurants') }}

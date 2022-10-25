@@ -1,0 +1,7 @@
+version: 2
+
+models:
+  - name: base_orders 
+    description: Selecting from source orders (source)
+  - name: base_restaurants
+    description: Selecting from source restaurants (public)

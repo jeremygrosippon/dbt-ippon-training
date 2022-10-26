@@ -39,6 +39,5 @@ models:
   dbt_ippon_training:
     marts:
       +materialized: table
-      +schema: DBT_JGROS
     staging:
       +materialized: ephemeral

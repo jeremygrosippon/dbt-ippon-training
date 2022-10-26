@@ -1,0 +1,8 @@
+identifier, name, address, nb_emplyees, open_on_sunday
+1, Chez Remy, Place de la Bourse - Toulouse, 3, true
+2, Chez vheng, Avenue de la Grande Armee - Paris, 4, true
+3, Chez Tristan, Avenue de la Grande Armee - Paris, 2, true
+4, Chez Nicolas, Allees de Tourny - Bordeaux, 1, false
+5, Chez Vincent, Allee Susan Brownell Anthony - Nantes, 3, false
+6, Chez Eliass, Place de la Bourse - Toulouse, 1, true
+7, Chez Sylvain, Allees de Tourny - Bordeaux, 10, true

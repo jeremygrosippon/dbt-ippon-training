@@ -2,7 +2,7 @@
     config(
         materialized='incremental',
         incremental_strategy='merge',
-        unique_key='dishe_id || ordered_at',
+        unique_key=['dishe_id','ordered_at'],
         on_schema_change='ignore'
     )
 }}

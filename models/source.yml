@@ -2,11 +2,11 @@ version: 2
 
 sources:
   - name: public
-    description: This is a replica of the Snowflake database used by our app
+    description: This table contains the seeds data of the project
     tables:
       - name: restaurants
         description: >
-          Informations about the restaurant of Norbert
+          Informations about the Norbert's restaurants
         columns:
           - name: IDENTIFIER
             description: Primary key of the restaurants table
@@ -21,19 +21,18 @@ sources:
           - name: ADDRESS
             description: Address of the restaurant
             tests:
-              - unique
               - not_null
           - name: NB_EMPLYEES
             description: Number of employees of the restaurant
             tests:
-              - unique
               - not_null
           - name: OPEN_ON_SUNDAY
             tests:
-              - unique
               - not_null
-
-      - name: commandes
+  - name: source
+    description: This is a replica of the Snowflake database used by our app
+    tables:
+      - name: orders
         description: >
           Informations about the restaurant's orders
         columns:
@@ -50,17 +49,45 @@ sources:
                     to: ref('restaurants')
                     field: IDENTIFIER
           - name: PAYMENT_METHOD
-            description: Address of the restaurant
+            description: Type of payment of the order
             tests:
               - not_null
               - accepted_values:
                     values: ['card', 'cash', 'cheque', 'meal_ticket']
-          - name: TOTAL_PRICE
-            description: Number of employees of the restaurant
+          - name: AMOUNT
+            description: Amount of the order
+            tests:
+              - not_null
+          - name: CREATED_AT
+            description: Creation date of the order
+            tests:
+              - not_null
+      - name: dishes
+        description: >
+          Informations about the restaurant's dishes
+        columns:
+          - name: IDENTIFIER
+            description: Primary key of the dishes table
             tests:
               - unique
               - not_null
-          - name: TIMESTAMP
+          - name: NAME
+            description: Name of the dishe
             tests:
-              - unique
               - not_null
+          - name: SELLING_PRICE
+            description: Selling price of the dishe
+            tests:
+              - not_null
+          - name: PRODUCTION_COST
+            description: Cost of production of the dishe
+            tests:
+              - not_null
+          - name: TYPE
+            description: Type of the dishe
+            tests:
+              - not_null
+              - accepted_values:
+                    values: ['entree', 'plat', 'dessert', 'boisson']
+
+              

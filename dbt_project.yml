@@ -9,6 +9,13 @@ config-version: 2
 # This setting configures which "profile" dbt uses for this project.
 profile: 'dbt_ippon_training_dev'
 
+# Variables
+vars:
+  # Number of restaurants to show in rank
+  number_restaurants_in_rank: 10
+  # Payment methods
+  payment_methods: ["card", "cash", "cheque", "meal_ticket"]
+
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
 # found in the "models/" directory. You probably won't need to change these!

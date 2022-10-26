@@ -1,0 +1,30 @@
+IDENTIFIER,NAME,SELLING_PRICE,PRODUCTION_COST,TYPE
+1,Russe,6,3,dessert
+2,Pinte de Biere,8,5,boisson
+3,Demi peche,4,2.5,boisson
+4,Ricard,3,1,boisson
+5,Choucroute,12,9,plat
+6,Tartiflette,12,6,plat
+7,Bouchee a la reine facon Achereiner,13,10,plat
+8,Spaetzles et sa viande sauvage au vin rouge,11,5,plat
+9,Flammkueche au munster,10,5,plat
+10,Panna cotta au jasmin,7,3,dessert
+11,Brownie et sa creme anglaise,6,4,dessert
+12,Welsh,10,5,plat
+13,Sirop de violette,3,0.3,boisson
+14,Boudin blanc sauce aux girolles et marrons,7,6,entree
+15,Pates aux pestos,10,4,plat
+16,Veloute de butternut,6,4,entree
+17,Jus de pamplemousse,3,1,boisson
+18,Tarte au citron,6,4,dessert
+19,Charlotte de courgette au chevre,7,4,entree
+20,Ballotines de poulet,8,5,entree
+21,Cornet de glace,5,2,dessert
+22,Maxi burger frite,14,7,plat
+23,Carbonade flamande,10,6,plat
+24,Aubergine alla parmigiana,11,5,plat
+25,Gencives de porc,10,7,plat
+26,Pizza de Parma,12,4.5,plat
+27,Pizza ananas,12,7,plat
+28,Boeuf stroganoff,14,6,plat
+29,Triple tacos,9,3,plat

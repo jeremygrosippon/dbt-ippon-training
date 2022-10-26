@@ -6,9 +6,9 @@ SELECT
     , sum(d.selling_price)             as turnover
     , sum(d.profit)                    as profit
 FROM 
-    {{ ref('base_orders') }} as o
+    {{ ref('stg_orders__dishes_flattened') }} as o
 left join 
-    {{ ref('base_dishes') }} as d
+    {{ ref('stg_dishes_with_profit') }} as d
     on array_contains(d.identifier, o.dishes_ids)
 group by 1, 2, 3
 order by 1, 2, 3

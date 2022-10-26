@@ -1,5 +1,3 @@
-{{ config(materialized='ephemeral') }}
-
 SELECT 
     restaurants.identifier
     , restaurants.name

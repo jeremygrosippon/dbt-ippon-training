@@ -1,1 +1,1 @@
-SELECT sum(NB_EMPLYEES) FROM {{ ref('base_restaurants') }}
+SELECT sum(NB_EMPLYEES) as NB_EMPLOYEES FROM {{ ref('base_restaurants') }}
